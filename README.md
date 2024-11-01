@@ -35,7 +35,7 @@ appropriately by citing:
 
 ```
 @misc{token-bench,
-  title = {Token-Bench: A Video Tokenizer Evaluation Dataset},
+  title = {TokenBench: A Video Tokenizer Evaluation Dataset},
   author = {Songwei Ge and Xian Liu and Fitsum Reda and Jinwei Gu and Haoxiang Wang and Ming-Yu Liu},
   year = {2024},
   publisher = {GitHub},
