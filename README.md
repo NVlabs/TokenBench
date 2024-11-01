@@ -13,33 +13,48 @@
 # See the License for the specific language governing permissions and
 # limitations under the License. -->
 
-# token-bench
+# TokenBench
+
+### [Cosmos-Tokenizer](github.com/NVIDIA/Cosmos-Tokenizer) | Huggingface Benchmark
+
+https://github.com/user-attachments/assets/90e73525-12b5-4d41-a642-ee7570726f35
 
 
+TokenBench consists of high-resolution, long-duration videos from a wide variety of domains, including robotic manipulation, driving, egocentric, and web videos, and is designed to evaluate the performance of video tokenizers. This repo provides instructions on how to download and preprocess the videos for TokenBench.
 
-## Prepare the video token-bench
 
-1. Download the datasets from officials sites:
+## Instructions to build TokenBench
+
+1. Download the datasets from the official websites:
 * EgoExo4D: https://docs.ego-exo4d-data.org/
 * BridgeData V2: https://rail-berkeley.github.io/bridgedata/
 * Panda70M: https://snap-research.github.io/Panda-70M/
 * BDD100K: http://bdd-data.berkeley.edu/
 
-2. Pick the videos as listed in the `video/list.txt` file.
+2. Pick the videos as specified in the `video/list.txt` file.
 3. Preprocess the videos using the script `video/preprocessing_script.py`.
 
-## Citation
-If you find this useful in your projects, please acknowledge it
-appropriately by citing:
+
+## Discrete tokenizer leaderboard
+
+| Tokenizer      | Compression Ratio | Formulation | PSNR  | SSIM | rFVD  |
+| -------------- | ----------------- | ----------- | ----- | ---- | ----- |
+| Cosmos         | 4 × 8 × 8         | AE          | 36.97 | 0.92 | 7.12  |
+| Cosmos         | 8 × 8 × 8         | AE          | 34.90 | 0.91 | 12.08 |
+| Cosmos         | 8 × 16 × 16       | AE          | 29.71 | 0.87 | 45.08 |
+| [CogVideoX](https://huggingface.co/docs/diffusers/en/api/models/autoencoderkl_cogvideox)      | 4 × 8 × 8         | VAE         | 33.55 | 0.91 | 6.68  |
+| [Omnitokenizer](https://github.com/FoundationVision/OmniTokenizer)  | 4 × 8 × 8         | VAE         | 30.08 | 0.82 | 34.79 |
+
+## Continuous tokenizer leaderboard
+
+| Tokenizer      | Compression Ratio | Quantization | PSNR  | SSIM | rFVD  |
+| -------------- | ----------------- | ------------ | ----- | ---- | ----- |
+| Cosmos         | 4 × 8 × 8         | FSQ          | 34.89 | 0.884 | 20.11 |
+| Cosmos         | 8 × 8 × 8         | FSQ          | 34.51 | 0.868 | 44.76 |
+| Cosmos         | 8 × 16 × 16       | FSQ          | 33.52 | 0.823 | 118.22 |
+| [Omnitokenizer](https://github.com/FoundationVision/OmniTokenizer)  | 4 × 8 × 8         | VQ           | 30.10 | 0.820 | 52.88 |
 
 
-```
-@misc{token-bench,
-  title = {TokenBench: A Video Tokenizer Evaluation Dataset},
-  author = {Songwei Ge and Xian Liu and Fitsum Reda and Jinwei Gu and Haoxiang Wang and Ming-Yu Liu},
-  year = {2024},
-  publisher = {GitHub},
-  journal = {GitHub repository},
-  howpublished = {\url{https://github.com/nvidia/token-bench}}
-}
-```
+## Core Contributors
+
+Fitsum Reda, Jinwei Gu, Xian Liu, Songwei Ge, Ting-Chun Wang, Haoxiang Wang, Ming-Yu Liu
