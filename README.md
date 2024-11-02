@@ -19,23 +19,22 @@
 
 https://github.com/user-attachments/assets/90e73525-12b5-4d41-a642-ee7570726f35
 
-
-TokenBench consists of high-resolution, long-duration videos from a wide variety of domains, including robotic manipulation, driving, egocentric, and web videos, and is designed to evaluate the performance of video tokenizers. This repo provides instructions on how to download and preprocess the videos for TokenBench.
+TokenBench is a comprehensive benchmark to standardize the evaluation for [Cosmos-Tokenizer](https://github.com/NVIDIA/Cosmos-Tokenizer), which covers a wide variety of domains including robotic manipulation, driving, egocentric, and web videos. It consists of high-resolution, long-duration videos, and is designed to evaluate the performance of video tokenizers. We resort to existing video datasets that are commonly used for various tasks, including [BDD100K](http://bdd-data.berkeley.edu/), [EgoExo-4D](https://docs.ego-exo4d-data.org/), [BridgeData V2](https://rail-berkeley.github.io/bridgedata/), and [Panda-70M](https://snap-research.github.io/Panda-70M/). This repo provides instructions on how to download and preprocess the videos for TokenBench.
 
 
 ## Instructions to build TokenBench
 
 1. Download the datasets from the official websites:
-* EgoExo4D: https://docs.ego-exo4d-data.org/
-* BridgeData V2: https://rail-berkeley.github.io/bridgedata/
-* Panda70M: https://snap-research.github.io/Panda-70M/
-* BDD100K: http://bdd-data.berkeley.edu/
+* EgoExo4D: <a href="https://docs.ego-exo4d-data.org/" target="_blank">https://docs.ego-exo4d-data.org/</a>
+* BridgeData V2: <a href="https://rail-berkeley.github.io/bridgedata/" target="_blank">https://rail-berkeley.github.io/bridgedata/</a>
+* Panda70M: <a href="https://snap-research.github.io/Panda-70M/" target="_blank">https://snap-research.github.io/Panda-70M/</a>
+* BDD100K: <a href="http://bdd-data.berkeley.edu/" target="_blank">http://bdd-data.berkeley.edu/</a>
 
 2. Pick the videos as specified in the `video/list.txt` file.
 3. Preprocess the videos using the script `video/preprocessing_script.py`.
 
 
-## Discrete tokenizer leaderboard
+## Discrete video tokenizer leaderboard
 
 | Tokenizer      | Compression Ratio | Formulation | PSNR  | SSIM | rFVD  |
 | -------------- | ----------------- | ----------- | ----- | ---- | ----- |
@@ -45,7 +44,7 @@ TokenBench consists of high-resolution, long-duration videos from a wide variety
 | [CogVideoX](https://huggingface.co/docs/diffusers/en/api/models/autoencoderkl_cogvideox)      | 4 × 8 × 8         | VAE         | 33.55 | 0.91 | 6.68  |
 | [Omnitokenizer](https://github.com/FoundationVision/OmniTokenizer)  | 4 × 8 × 8         | VAE         | 30.08 | 0.82 | 34.79 |
 
-## Continuous tokenizer leaderboard
+## Continuous video tokenizer leaderboard
 
 | Tokenizer      | Compression Ratio | Quantization | PSNR  | SSIM | rFVD  |
 | -------------- | ----------------- | ------------ | ----- | ---- | ----- |
@@ -55,6 +54,6 @@ TokenBench consists of high-resolution, long-duration videos from a wide variety
 | [Omnitokenizer](https://github.com/FoundationVision/OmniTokenizer)  | 4 × 8 × 8         | VQ           | 30.10 | 0.820 | 52.88 |
 
 
-## Core Contributors
+## Core contributors
 
 Fitsum Reda, Jinwei Gu, Xian Liu, Songwei Ge, Ting-Chun Wang, Haoxiang Wang, Ming-Yu Liu
