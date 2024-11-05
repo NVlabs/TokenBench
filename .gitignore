@@ -1,0 +1,8 @@
+*.zip
+**/.DS_Store
+credentials
+*.secret
+__pycache__
+.vscode/
+.flake8
+scrub_*.sh
