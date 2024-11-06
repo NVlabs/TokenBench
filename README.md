@@ -15,7 +15,7 @@
 
 # TokenBench
 
-### [Cosmos-Tokenizer](https://github.com/NVIDIA/Cosmos-Tokenizer) | [Hugging Face Benchmark](https://huggingface.co/collections/nvidia/cosmos-tokenizer-672b93023add81b66a8ff8e6)
+### [Cosmos-Tokenizer Code](https://github.com/NVIDIA/Cosmos-Tokenizer) | [Technical Report](https://research-staging.nvidia.com/labs/dir/cosmos-tokenizer/)
 
 
 https://github.com/user-attachments/assets/72536cfc-5cb5-4b48-88fa-b06f3c8c4495
