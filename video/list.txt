@@ -342,7 +342,7 @@ datacol2_folding_table/pnp_push_sweep/04/first_date_in_folder/raw/traj_group0/tr
 datacol2_folding_table/pnp_push_sweep/05/first_date_in_folder/raw/traj_group0/traj0/images0
 datacol2_folding_table/stack_blocks/00/first_date_in_folder/raw/traj_group0/traj0/images0
 datacol2_folding_table/stack_blocks/01/first_date_in_folder/raw/traj_group0/traj0/images0
-datacol2_folding_table/white_tray_sweep_granular/14/first_date_in_folder/raw/traj_group0/traj0/images0
+datacol2_folding_table_white_tray/sweep_granular/14/first_date_in_folder/raw/traj_group0/traj0/images0
 datacol2_laundry_machine/pnp_push_sweep/01/first_date_in_folder/raw/traj_group0/traj0/images0
 datacol2_laundry_machine/pnp_push_sweep/04/first_date_in_folder/raw/traj_group0/traj0/images0
 datacol2_laundry_machine/pnp_sweep/01/first_date_in_folder/raw/traj_group0/traj0/images0
@@ -400,10 +400,10 @@ datacol2_toykitchen7/sweep_granular/01/first_date_in_folder/raw/traj_group0/traj
 datacol2_toykitchen7/sweep_granular/02/first_date_in_folder/raw/traj_group0/traj0/images0
 datacol2_toykitchen7/sweep_granular/04/first_date_in_folder/raw/traj_group0/traj0/images0
 datacol2_toykitchen7/sweep_granular/05/first_date_in_folder/raw/traj_group0/traj0/images0
-datacol2_toysink2_pnp_push_sweep/01/first_date_in_folder/raw/traj_group0/traj0/images0
-datacol2_toysink2_pnp_push_sweep/02/first_date_in_folder/raw/traj_group0/traj0/images0
-datacol2_toysink2_pnp_push_sweep/14/first_date_in_folder/raw/traj_group0/traj0/images0
-datacol2_toysink2_pnp_push_sweep/15/first_date_in_folder/raw/traj_group0/traj0/images0
+datacol2_toysink2/pnp_push_sweep/01/first_date_in_folder/raw/traj_group0/traj0/images0
+datacol2_toysink2/pnp_push_sweep/02/first_date_in_folder/raw/traj_group0/traj0/images0
+datacol2_toysink2/pnp_push_sweep/14/first_date_in_folder/raw/traj_group0/traj0/images0
+datacol2_toysink2/pnp_push_sweep/15/first_date_in_folder/raw/traj_group0/traj0/images0
 deepthought_folding_table/stack_blocks/01/first_date_in_folder/raw/traj_group0/traj0/images0
 deepthought_folding_table/stack_blocks/02/first_date_in_folder/raw/traj_group0/traj0/images0
 deepthought_folding_table/stack_blocks/15/first_date_in_folder/raw/traj_group0/traj0/images0
