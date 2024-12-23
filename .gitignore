@@ -3,6 +3,9 @@
 credentials
 *.secret
 __pycache__
+pretrained_ckpts/
+pretrained_ckpts
+reconstructions/
 .vscode/
 .flake8
 scrub_*.sh
