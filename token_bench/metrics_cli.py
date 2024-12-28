@@ -164,14 +164,8 @@ def main_psnr_ssim() -> None:
         assert (
             input0_file.split("/")[-1] == input1_file.split("/")[-1]
         ), "file names must match"
-        input0 = read_video(input0_file)
-        input1 = read_video(input1_file)
-
-        # cast to float32
-        if input0.dtype != np.float32:
-            input0 = input0.astype(np.float32)
-        if input1.dtype != np.float32:
-            input1 = input1.astype(np.float32)
+        input0 = read_video(input0_file).astype(np.float32)
+        input1 = read_video(input1_file).astype(np.float32)
 
         name = input0_file.split("/")[-1]
         psnr_value = PSNR(input0, input1)
