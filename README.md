@@ -113,3 +113,17 @@ python3 -m token_bench.metrics_cli --mode=lpips \
 ## Core contributors
 
 Fitsum Reda, Jinwei Gu, Xian Liu, Songwei Ge, Ting-Chun Wang, Haoxiang Wang, Ming-Yu Liu
+
+## Citation
+
+If you find TokenBench useful in your works, please acknowledge it
+appropriately by citing:
+
+```
+@article{agarwal2025cosmos,
+  title={Cosmos World Foundation Model Platform for Physical AI},
+  author={NVIDIA et. al.},
+  journal={arXiv preprint arXiv:2501.03575},
+  year={2025}
+}
+```
